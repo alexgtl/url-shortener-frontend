@@ -1,7 +1,9 @@
 <template>
-  <header></header>
-  <main>
+  <div class="w-dvm h-dvh grid justify-items-center bg-main font-sans">
+    <HeaderNav />
     <slot />
-  </main>
-  <footer></footer>
+    <AppFooter />
+  </div>
 </template>
+
+<style></style>
