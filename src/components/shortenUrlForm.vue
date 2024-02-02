@@ -23,6 +23,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+// eslint-disable-next-line no-undef
+const config = useRuntimeConfig()
+const baseApiUrl: string = config.public.baseApiUrl as string
+
 const encodedUrl = defineModel()
 const urlToShort = ref<string>('')
 
@@ -38,7 +42,8 @@ const getEncodedUrl = async (urlToShort: string) => {
       url: urlToShort
     })
   }
-  const response = await fetch(`http://localhost:3030/api/v1/encodeUrl`, responseOptions)
+
+  const response = await fetch(`${baseApiUrl}/encodeUrl`, responseOptions)
   const data = await response.json()
   return data.encodedUrl
 }

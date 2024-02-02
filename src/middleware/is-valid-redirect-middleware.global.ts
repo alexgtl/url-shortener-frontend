@@ -4,6 +4,9 @@ export default defineNuxtRouteMiddleware(async (to) => {
     return
   }
 
+  const config = useRuntimeConfig()
+  const baseApiUrl: string = config.public.baseApiUrl as string
+
   const options = {
     method: 'GET',
     headers: {
@@ -11,7 +14,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
     }
   }
 
-  const response = await fetch(`http://localhost:3030/api/v1/decodeUrl/${encodedUrl}`, options)
+  const response = await fetch(`${baseApiUrl}/decodeUrl/${encodedUrl}`, options)
   const { decodedUrl } = await response.json()
 
   if (decodedUrl) {
