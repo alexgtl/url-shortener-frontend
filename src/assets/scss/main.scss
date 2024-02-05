@@ -1,9 +1,29 @@
 @import '_reset';
+@import '_transitions';
 
-html,
-body {
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 p {
   max-width: 75ch;
+}
+
+button,
+input[type='submit'] {
+  transition: all 0.4s;
+
+  &:hover {
+    filter: saturate(50.4%);
+  }
 }

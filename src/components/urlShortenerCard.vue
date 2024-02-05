@@ -1,19 +1,20 @@
 <template>
-  <div class="w-full p-12 rounded overflow-hidden shadow-lg bg-gray-200">
+  <div class="">
     <ShortenUrlForm
       v-model="encodedUrl"
       ref="formComponent"
     />
-
-    <ShowEncodedUrl
-      v-if="encodedUrl"
-      :encodedUrl="encodedUrl"
-    />
-
+    <Transition>
+      <ShowEncodedUrl
+        class="mt-7"
+        v-if="encodedUrl"
+        :encodedUrl="encodedUrl"
+      />
+    </Transition>
     <div>
       <button
         @click="clearFieldsHandler"
-        class="bg-green text-white px-4 py-2 mt-5 hover:bg-[#74A385]"
+        class="bg-accent text-white px-4 py-2 mt-5"
       >
         Clear fields
       </button>

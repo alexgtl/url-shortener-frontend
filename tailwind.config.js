@@ -9,9 +9,12 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        main: '#F5F5F5',
-        secondary: '#5a5424',
-        green: '#8CC7A1'
+        white: '#fcfbf8',
+        black: '#2b2e39',
+        accent: '#7733ff',
+        primary: '#f3ece2',
+        secondary: '#f4f3ef',
+        terciary: '#f7f1e8'
       }
     }
   }

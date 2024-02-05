@@ -1,5 +1,5 @@
 <template>
-  <div class="w-dvm h-dvh grid justify-items-center bg-main font-sans">
+  <div class="w-dvw min-h-dvh bg-white text-black font-sans">
     <HeaderNav />
     <slot />
     <AppFooter />
