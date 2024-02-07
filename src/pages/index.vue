@@ -1,15 +1,15 @@
 <template>
   <main class="min-h-screen w-screen flex flex-col items-center">
     <section class="w-full min-h-screen pt-[30dvh] lg:px-[10dvw]">
-      <div class="w-10/12 mfy-5 px-[2dvw] max-w-[1920px] h-full">
-        <h1 class="mb-4 text-4xl max-w-[10ch] font-bold leading-tight">
+      <div class="mfy-5 px-[2dvw] max-w-[1920px] h-full items-center w-full md:w-10/12">
+        <h1 class="mb-4 text-4xl font-bold leading-tight pl-4 max-w-[15ch] md:pl-0 md:max-w-[10ch]">
           Get your <span class="text-accent italic">alexgutierrez.dev</span> shorted url
         </h1>
         <UrlShortenerCard />
       </div>
     </section>
 
-    <section class="py-[10dvh] w-10/12 text-center flex flex-col items-center bg-terciary">
+    <section class="px-[4dvh] md:px-0 py-[10dvh] w-10/12 text-center flex flex-col items-center bg-terciary">
       <h1 class="font-bold text-3xl">Hey there! 👋</h1>
       <p class="text-xl mt-4 font-semibold text-black">
         Recently, I embarked on a journey to create something cool, and voila, I present to you my latest creation – an
