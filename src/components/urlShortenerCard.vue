@@ -14,7 +14,7 @@
     <div>
       <button
         @click="clearFieldsHandler"
-        class="bg-accent text-white px-4 py-2 mt-5"
+        class="bg-accent text-white px-4 py-2 mt-5 font-bold"
       >
         Clear fields
       </button>

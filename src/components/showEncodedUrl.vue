@@ -57,7 +57,7 @@ const copyToClipboard = async () => {
   try {
     await navigator.clipboard.writeText(getFullyEncodedUrl.value)
     isLinkCopied.value = true
-    showModal('Your link is now copied in your clipboard!')
+    showModal('Your link is now copied and ready to use!')
   } catch (error) {
     console.error('Failed to copy to clipboard: ', error)
   }

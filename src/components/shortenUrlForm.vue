@@ -11,11 +11,16 @@
         placeholder="Place long and boring URL here"
         v-model="urlToShort"
       />
-      <input
-        class="py-2 px-3 bg-accent text-white font-bold cursor-pointer outline-0 transition"
+      <button
+        class="py-2 px-3 w-40 bg-accent text-white font-bold cursor-pointer outline-0 transition"
         type="submit"
-        value="Shorten the url!"
-      />
+        value=""
+        :disabled="isLoading"
+        @click="onSubmitHandler"
+      >
+        <LoaderIcon v-if="isLoading" />
+        <span v-else>Shorten the url!</span>
+      </button>
     </div>
 
     <Transition>
@@ -39,6 +44,7 @@ const urlToShort = ref<string>('')
 
 const isModalOpen: Ref<boolean> = ref(false)
 const modalMessage: Ref<string> = ref('')
+const isLoading: Ref<boolean> = ref(false)
 
 defineExpose({ urlToShort })
 
@@ -70,18 +76,15 @@ const getEncodedUrl = async (urlToShort: string) => {
 
 const onSubmitHandler = async (e: Event) => {
   e.preventDefault()
+  isLoading.value = true
 
   if (!urlToShort.value) {
     return
   }
 
-  const urlRegex: RegExp = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/
-  const isValidUrl = urlRegex.test(urlToShort.value)
-  if (!isValidUrl) {
-    showModal('Invalid Url. Try again with another one :)')
-    return
-  }
-
-  encodedUrl.value = await getEncodedUrl(urlToShort.value)
+  setTimeout(async () => {
+    encodedUrl.value = await getEncodedUrl(urlToShort.value)
+    isLoading.value = false
+  }, 1000)
 }
 </script>
