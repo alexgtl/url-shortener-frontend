@@ -82,9 +82,7 @@ const onSubmitHandler = async (e: Event) => {
     return
   }
 
-  setTimeout(async () => {
-    encodedUrl.value = await getEncodedUrl(urlToShort.value)
-    isLoading.value = false
-  }, 1000)
+  encodedUrl.value = await getEncodedUrl(urlToShort.value)
+  isLoading.value = false
 }
 </script>

@@ -3,7 +3,7 @@
     <section class="w-full min-h-screen pt-[30dvh] lg:px-[10dvw]">
       <div class="mfy-5 px-[2dvw] max-w-[1920px] h-full items-center w-full md:w-10/12">
         <h1 class="mb-4 text-4xl font-bold leading-tight pl-4 max-w-[15ch] md:pl-0 md:max-w-[10ch]">
-          Get your <span class="text-accent italic">alexgutierrez.dev</span> shorted url
+          Get your <span class="text-accent italic">agutierrez.link</span> shorted url
         </h1>
         <UrlShortenerCard />
       </div>
