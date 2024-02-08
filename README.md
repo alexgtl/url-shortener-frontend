@@ -1,79 +1,34 @@
-# url-shortener-frontend
+# AGutierrez.link URL Shortener
 
-The frontend of the url shortener app
+Hey there! Welcome to my URL shortener project, hosted under the domain agutierrez.link. 🚀
 
-# Nuxt 3 Minimal Starter
+## What's This Project About?
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Well, it's a URL shortener! You know, those handy tools that take long, unwieldy URLs and turn them into something short and sweet. Perfect for sharing on social media, in emails, or just to tidy up your links.
 
-## Setup
+## Tech Stack
 
-Make sure to install the dependencies:
+For this project, I've used some awesome technologies:
 
-```bash
-# npm
-npm install
+- **Nuxt**: It's a Vue.js framework that makes building Vue applications super fast and easy. Plus, it's great for SEO!
+- **TypeScript**: Adds static typing to JavaScript, making our code more predictable and easier to debug. No more surprises!
+- **Tailwind CSS**: A utility-first CSS framework that gives us superpowers when it comes to styling. With Tailwind, we can build beautiful designs quickly without writing a ton of custom CSS.
 
-# pnpm
-pnpm install
+## How to Use
 
-# yarn
-yarn install
+Using the URL shortener is a piece of cake:
 
-# bun
-bun install
-```
+1. Just head over to [agutierrez.link](https://agutierrez.link).
+2. Paste your long URL into the input field.
+3. Click the "Shorten" button.
+4. Voilà! You'll get a nice, short URL that you can share with the world.
 
-## Development Server
+## Contributing
 
-Start the development server on `http://localhost:3000`:
+Found a bug? Got a feature request? Awesome! I'm always open to contributions. Just [open an issue](https://github.com/alexgtl/url-shortener-frontend/issues) or [submit a pull request](https://github.com/your-username/your-project/pulls) on GitHub.
 
-```bash
-# npm
-npm run dev
+## Get in Touch
 
-# pnpm
-pnpm run dev
+If you have any questions, suggestions, or just want to say hi, feel free to reach out. You can find me on [Twitter](https://twitter.com/cebolladigital) or [LinkedIn](https://www.linkedin.com/in/alex-gtl/).
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Happy shortening! ✨
