@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   srcDir: './src',
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/scss/main.scss'],
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/ico', href: 'favicon.ico' }]
+    }
+  },
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL,
