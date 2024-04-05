@@ -16,7 +16,7 @@
         @click="clearFieldsHandler"
         class="bg-accent text-white px-4 py-2 mt-5 font-bold"
       >
-        Clear fields
+        Reset
       </button>
     </div>
   </div>

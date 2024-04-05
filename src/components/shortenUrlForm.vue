@@ -19,7 +19,7 @@
         @click="onSubmitHandler"
       >
         <LoaderIcon v-if="isLoading" />
-        <span v-else>Shorten the url!</span>
+        <span v-else>Shorten</span>
       </button>
     </div>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h2 class="font-semibold mb-2">Here is your shorted url!</h2>
+    <h2 class="font-semibold mb-2">Here is your shorted url</h2>
     <div class="relative w-full flex">
       <input
         class="text-gray-500 py-2 px-3 grow shadow-lg border-0 focus:border-green focus:ring-0 focus-visible:border-0"
@@ -12,7 +12,7 @@
         @click="copyToClipboard"
         class="py-2 px-3 bg-accent text-white font-bold cursor-pointer outline-0 transition"
       >
-        📋
+        Copy to clipboard
       </button>
     </div>
 

@@ -1,14 +1,15 @@
 <template>
-  <div class="w-dvw min-h-dvh bg-white text-black font-sans">
-    <HeaderNav />
+  <div class="w-dvw min-h-dvh bg-white text-black">
     <slot />
     <AppFooter />
   </div>
 </template>
 
-<style></style>
-
 <script setup>
+// Supports weights 100-900
+import '@fontsource-variable/montserrat'
+
+// eslint-disable-next-line no-undef
 useSeoMeta({
   title: 'Url shortener | agutierrez.link',
   ogTitle: 'Url shortener | agutierrez.link',
