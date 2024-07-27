@@ -1,5 +1,5 @@
 <template>
-  <div class="w-dvw min-h-dvh bg-white text-black">
+  <div class="w-dvw min-h-dvh bg-black text-white flex flex-col justify-between px-8">
     <slot />
     <AppFooter />
   </div>

@@ -10,11 +10,12 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         white: '#fcfbf8',
-        black: '#2b2e39',
-        accent: '#7733ff',
-        primary: '#f3ece2',
-        secondary: '#f4f3ef',
-        terciary: '#f7f1e8'
+        black: '#242423',
+        accent: '#EECF6D',
+        'accent-dark': '#9e9168',
+        primary: '#D5AC4E',
+        secondary: '#D5AC4E',
+        terciary: '#D5AC4E'
       }
     }
   }
