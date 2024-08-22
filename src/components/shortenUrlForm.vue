@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, type Ref, watch } from 'vue'
+import { ref, type Ref } from 'vue'
 import FormButton from './formButton.vue'
 
 // eslint-disable-next-line no-undef
@@ -61,17 +61,6 @@ const isLoading: Ref<boolean> = ref(false)
 const hasError: Ref<boolean> = ref(false)
 
 defineExpose({ urlToShort })
-
-/* function showModal(message: string, timeout = 5000) {
-  modalMessage.value = message
-  isModalOpen.value = true
-
-  setTimeout(() => {
-    isModalOpen.value = false
-    modalMessage.value = ''
-  }, timeout)
-} */
-
 const getEncodedUrl = async (urlToShort: string) => {
   const responseOptions = {
     method: 'POST',
