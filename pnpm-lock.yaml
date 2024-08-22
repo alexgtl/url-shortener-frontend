@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/gabarito':
+        specifier: ^5.0.6
+        version: 5.0.6
       '@fontsource-variable/montserrat':
         specifier: ^5.0.19
         version: 5.0.19
@@ -672,6 +675,9 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@fontsource-variable/gabarito@5.0.6':
+    resolution: {integrity: sha512-IAyrxbyshKAZkTlaht0C+UQGlFAVLl9tEi4ZgRIx3Kr1nt56M8193ezGIXBxfQxEBtTEUrQCbFaj6yhlkb0cDw==}
 
   '@fontsource-variable/montserrat@5.0.19':
     resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
@@ -4452,6 +4458,8 @@ snapshots:
     optional: true
 
   '@fastify/busboy@2.1.1': {}
+
+  '@fontsource-variable/gabarito@5.0.6': {}
 
   '@fontsource-variable/montserrat@5.0.19': {}
 
