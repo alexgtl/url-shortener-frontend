@@ -6,19 +6,6 @@
     @submit="onSubmitHandler"
   >
     <div class="flex flex-wrap">
-      <!--       <select
-        name=""
-        id=""
-        class="py-2 px-3 shadow-lg border-0 text-black focus:ring-0 focus-visible:border-0"
-        disabled
-      >
-        <option
-          selected
-          value="https://"
-        >
-          https://
-        </option>
-      </select> -->
       <input
         class="py-2 px-3 grow shadow-lg border-0 text-black focus:ring-0 focus-visible:border-0"
         type="text"
@@ -74,18 +61,6 @@ const isLoading: Ref<boolean> = ref(false)
 const hasError: Ref<boolean> = ref(false)
 
 defineExpose({ urlToShort })
-
-watch(urlToShort, () => {
-  /*   console.log(urlToShort.value)
-
-  if (urlToShort.value.includes('http:/')) {
-    urlToShort.value = urlToShort.value.replace('http://', '')
-  }
-
-  if (urlToShort.value.includes('https:/')) {
-    urlToShort.value = urlToShort.value.replace('https://', '')
-  } */
-})
 
 const getEncodedUrl = async (urlToShort: string) => {
   const responseOptions = {
