@@ -17,12 +17,18 @@ export default defineNuxtRouteMiddleware(async (to) => {
   const response = await fetch(`${baseApiUrl}/decodeUrl/${encodedUrl}`, options)
   let { decodedUrl } = await response.json()
 
+  if (response.status === 404 || decodedUrl === 'not-found') {
+    return await navigateTo('/')
+  }
+
   if (decodedUrl) {
     const hasProtocol = decodedUrl.startsWith('http://') || decodedUrl.startsWith('https://')
     if (!hasProtocol) {
       decodedUrl = 'http://' + decodedUrl
     }
 
-    return await navigateTo(decodedUrl, { external: true })
+    return navigateTo(decodedUrl, { external: true })
   }
+
+  return navigateTo(to.path)
 })
