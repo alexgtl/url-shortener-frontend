@@ -11,9 +11,6 @@ importers:
       '@fontsource-variable/gabarito':
         specifier: ^5.0.6
         version: 5.0.6
-      '@fontsource-variable/montserrat':
-        specifier: ^5.0.19
-        version: 5.0.19
       '@nuxt/image':
         specifier: ^1.7.0
         version: 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.19.1)
@@ -678,9 +675,6 @@ packages:
 
   '@fontsource-variable/gabarito@5.0.6':
     resolution: {integrity: sha512-IAyrxbyshKAZkTlaht0C+UQGlFAVLl9tEi4ZgRIx3Kr1nt56M8193ezGIXBxfQxEBtTEUrQCbFaj6yhlkb0cDw==}
-
-  '@fontsource-variable/montserrat@5.0.19':
-    resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -4460,8 +4454,6 @@ snapshots:
   '@fastify/busboy@2.1.1': {}
 
   '@fontsource-variable/gabarito@5.0.6': {}
-
-  '@fontsource-variable/montserrat@5.0.19': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:

@@ -1,16 +1,9 @@
 <template>
-  <div class="">
+  <div class="min-w-[70%]">
     <ShortenUrlForm
       v-model="encodedUrl"
       ref="formComponent"
     />
-    <Transition>
-      <ShowEncodedUrl
-        class="mt-7"
-        v-if="encodedUrl"
-        :encodedUrl="encodedUrl"
-      />
-    </Transition>
   </div>
 </template>
 

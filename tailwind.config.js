@@ -9,12 +9,14 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        white: '#fcfbf8',
+        dark: '#0e0e0e',
+        light: '#cbcac9',
+        white: '#FFF',
         black: '#242423',
-        accent: '#EECF6D',
-        'accent-dark': '#9e9168',
-        primary: '#D5AC4E',
-        secondary: '#D5AC4E',
+        accent: '#F1DABF',
+        'accent-dark': '#42b883',
+        primary: '#F1DABF',
+        secondary: '#F1DABF',
         terciary: '#D5AC4E'
       }
     }

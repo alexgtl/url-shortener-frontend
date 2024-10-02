@@ -16,7 +16,7 @@
 
     <Transition>
       <SimpleModal
-        v-if="isLinkCopied"
+        v-if="isModalOpen"
         :message="modalMessage"
       />
     </Transition>

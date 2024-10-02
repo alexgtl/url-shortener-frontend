@@ -5,32 +5,47 @@
     class=""
     @submit="onSubmitHandler"
   >
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap items-center relative">
+      <img
+        src="~/assets/images/icons/chain.svg"
+        class="absolute z-10 h-5 left-2 top-3 saturate-50"
+        alt="a chain icon"
+      />
       <input
-        class="py-2 px-3 grow shadow-lg border-0 text-black focus:ring-0 focus-visible:border-0"
+        class="url-input py-2 px-3 pl-9 grow border-0 text-dark focus:ring-0 focus-visible:border-0"
         type="text"
         ref="urlInput"
         placeholder="Place long and boring URL here"
         v-model="urlToShort"
       />
     </div>
-    <label
-      class="error-message pl-2 mt-6 block text-red-800 absolute"
-      v-if="hasError"
-      for="error"
-    >
-      Please, insert a valid URL to short
-    </label>
-    <div class="flex gap-4 mt-4 w-full justify-end">
+
+    <Transition>
+      <ShowEncodedUrl
+        class="mt-7"
+        v-if="encodedUrl"
+        :encodedUrl="encodedUrl"
+      />
+    </Transition>
+
+    <Transition>
+      <SimpleModal
+        v-if="hasError"
+        message="Please, insert a valid URL to short"
+      />
+    </Transition>
+
+    <div class="flex gap-4 mt-4 justify-center">
       <FormButton
         @clicked="clearFieldsHandler"
         message="Reset field"
+        class="saturate-0"
       />
 
       <FormButton
         @clicked="onSubmitHandler"
         :disabled="isLoading"
-        message="Short it"
+        message="Shorten"
       />
     </div>
 
@@ -44,7 +59,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, type Ref, watch } from 'vue'
+import { ref, type Ref } from 'vue'
 import FormButton from './formButton.vue'
 
 // eslint-disable-next-line no-undef
@@ -52,7 +67,7 @@ const config = useRuntimeConfig()
 const baseApiUrl: string = config.public.baseApiUrl as string
 
 const urlInput = ref(null)
-const encodedUrl = defineModel()
+const encodedUrl = defineModel<string>()
 const urlToShort = ref<string>('')
 
 const isModalOpen: Ref<boolean> = ref(false)
@@ -82,6 +97,9 @@ const onSubmitHandler = async () => {
   hasError.value = false
   if (!urlToShort.value) {
     hasError.value = true
+    setTimeout(() => {
+      hasError.value = false
+    }, 2000)
     return
   }
 

@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@fontsource-variable/gabarito": "^5.0.6",
-    "@fontsource-variable/montserrat": "^5.0.19",
     "@nuxt/image": "^1.7.0"
   }
 }
