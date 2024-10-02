@@ -33,14 +33,14 @@
         title="Track Performance"
         text="Gain insights with click statistics to optimize your sharing strategy."
       >
-        <img src="~/assets/images/icons/rocket.svg" />
+        <img src="~/assets/images/icons/performance.svg" />
       </BenefitCard>
       <BenefitCard
         icon="rocket.svg"
         title="Your own url"
         text="Easily personalize your links with custom aliases to enhance brand recognition."
       >
-        <img src="~/assets/images/icons/performance.svg" />
+        <img src="~/assets/images/icons/rocket.svg" />
       </BenefitCard>
     </div>
 
