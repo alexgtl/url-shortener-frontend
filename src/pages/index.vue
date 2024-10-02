@@ -3,8 +3,8 @@
     <div class="wrapper flex flex-col items-center text-center py-8 pt-[20dvh] text-white z-10">
       <h1 class="text-4xl font-bold max-w-96 text-center">Transform Your Links, Simplify Your Sharing</h1>
       <h2 class="max-w-lg text-sm mt-2 mb-10 w-fit">
-        At agutierrez.link, we make sharing easier by turning long, cumbersome URLs into concise, manageable links.
-        Experience the convenience of quick sharing and tracking with our user-friendly URL shortener.
+        Make sharing easier by turning long, cumbersome URLs into concise, manageable links. Experience the convenience
+        of quick sharing and tracking with our user-friendly URL shortener.
       </h2>
       <UrlShortenerCard />
     </div>
@@ -39,13 +39,14 @@
       />
     </div>
 
-    <div class="mt-10">
+    <div class="mt-20 min-h-[30dvh] flex flex-col justify-center text-center">
+      <h2 class="text-3xl mb-10">Want your own personalized URL?</h2>
       <button class="button-grad">
         <a
           href="https://alexgutierrez.dev/#contact"
           target="_blank"
         >
-          Contact me for your own personalized url</a
+          Contact me</a
         >
       </button>
     </div>
@@ -68,7 +69,6 @@
   background-size: 200% auto;
   color: white;
   box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
   display: block;
 }
 
