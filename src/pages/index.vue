@@ -39,14 +39,13 @@
       />
     </div>
 
-    <div class="mt-20 min-h-[30dvh] flex flex-col justify-center text-center">
-      <h2 class="text-3xl mb-10">Want your own personalized URL?</h2>
+    <div class="mt-20">
       <button class="button-grad">
         <a
           href="https://alexgutierrez.dev/#contact"
           target="_blank"
         >
-          Contact me</a
+          Contact me for your own personalized url</a
         >
       </button>
     </div>

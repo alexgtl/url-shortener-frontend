@@ -9,7 +9,7 @@
     </header>
 
     <main class="mt-4">
-      <h2>{{ title }}</h2>
+      <h2 class="font-bold uppercase mb-5">{{ title }}</h2>
       <p>{{ text }}</p>
     </main>
   </article>
