@@ -6,8 +6,9 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/main.scss'],
 
   app: {
+    baseURL: '/',
     head: {
-      link: [{ rel: 'icon', type: 'image/ico', href: 'favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/ico', href: '/favicon.ico' }]
     }
   },
 

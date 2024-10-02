@@ -24,19 +24,24 @@
         icon="world.svg"
         title="Easy Sharing"
         text="Share links effortlessly across platforms without the hassle of lengthy URLs."
-      />
+      >
+        <img src="~/assets/images/icons/world.svg" />
+      </BenefitCard>
 
       <BenefitCard
         icon="performance.svg"
         title="Track Performance"
         text="Gain insights with click statistics to optimize your sharing strategy."
-      />
-
+      >
+        <img src="~/assets/images/icons/rocket.svg" />
+      </BenefitCard>
       <BenefitCard
         icon="rocket.svg"
         title="Your own url"
         text="Easily personalize your links with custom aliases to enhance brand recognition."
-      />
+      >
+        <img src="~/assets/images/icons/performance.svg" />
+      </BenefitCard>
     </div>
 
     <div class="mt-20">

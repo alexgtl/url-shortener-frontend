@@ -22,7 +22,6 @@
     "vue-router": "^4.4.0"
   },
   "dependencies": {
-    "@fontsource-variable/gabarito": "^5.0.6",
-    "@nuxt/image": "^1.7.0"
+    "@fontsource-variable/gabarito": "^5.0.6"
   }
 }
