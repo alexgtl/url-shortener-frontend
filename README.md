@@ -18,7 +18,7 @@ For this project, I've used some awesome technologies:
 
 Using the URL shortener is a piece of cake:
 
-1. Just head over to [agutierrez.link](https://agutierrez.link).
+1. Just head over to [agutierrez.link](https://alexgutierrez.link).
 2. Paste your long URL into the input field.
 3. Click the "Shorten" button.
 4. Voilà! You'll get a nice, short URL that you can share with the world.
